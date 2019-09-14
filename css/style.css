@@ -1,0 +1,493 @@
+/* ++++++++GENERAL++++++++++++ */
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoonacfe.eot?-yinaf8');
+    src:url('../fonts/icomoond41d.eot?#iefix-yinaf8') format('embedded-opentype'),
+    url('../fonts/icomoonacfe.woff?-yinaf8') format('woff'),
+    url('../fonts/icomoonacfe.ttf?-yinaf8') format('truetype'),
+    url('../fonts/icomoonacfe.svg?-yinaf8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: calc(2vmin + 7px);
+  font-family: Verdana, sans-serif;
+  color:#2f2f2f;
+
+}
+.flex-row{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+
+}
+img{
+  max-width:100%;
+}
+h2{
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding:1.3vh 15%;
+  border:1px solid #000;
+  margin-bottom:2vh;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 3.3rem;
+  font-weight: bold;
+  color:#fff;
+  position: relative;
+  top: 40%;
+}
+span{
+  display: inline-block;
+  border-bottom:1.2vmin solid #fff;
+}
+p{
+  text-align:justify;
+  line-height: 1.6rem;
+}
+.container{
+  width: 970px;
+  max-width: 95%;
+  margin:0 auto;
+
+}
+.text{
+  width: 45%;
+  text-align: center;
+  flex:1 0 240px;
+  padding:0 2% 10vh;
+}
+.images{
+  width: 45%;
+  /* max-width: 85%; */
+  height: auto;
+  align-items: center;
+  flex:1 0 250px;
+  padding:0 2% 10vh;
+}
+.images img{
+  /* width: 58%; */
+  /* max-width: 80%; */
+  /* height: 23vmax;; */
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+  margin:1%;
+}
+/*++++++++++++ Навигатор top_nav++++++++++++ */
+.top_nav{
+  height: 70px;
+  background-color: #1e1e1e;
+  position:fixed;
+  width: 100%;
+  top:0;
+  z-index:100;
+
+}
+.top_nav .container{
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_menu{
+  width: 700px;
+}
+.top_menu a{
+  display: block;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .6rem;
+  padding:15px 0;
+  transition: .3s;
+}
+.top_menu a:hover{
+  color:#96E16B;
+
+}
+.navactive{
+  border-bottom:1px solid #96E16B;
+}
+.logo a{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color:#fff;
+  padding:20px 20px 20px 0;
+
+}
+
+/* +++++HEADER++++++ */
+header{
+  background: url(../img/steak.jpg) no-repeat;
+  background-position:center;
+  height:100vh;
+  background-size: cover;
+  color:#fff;
+  margin-bottom:10vh;
+}
+header .container{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h1{
+  font:5.5rem 'Playball', cursive;
+}
+header p{
+  font-style: italic;
+  font-size:1.3rem;
+  text-transform: capitalize;
+  width: 50%;
+  padding:1.1rem 0;
+  border-bottom:1px solid #eee;
+  text-align: center;
+}
+
+/*+++++++++ ABOUT US+++++++++++ */
+#about, #beer, #bread, #look_dishes{
+  /* padding:10vh 0; */
+}
+
+.fa{
+  display: block;
+  padding:2vh 0;
+}
+
+/*+++++++++++++ PRICENG++++++++++++++++ */
+.price.background_content {
+    background: url(../img/pricing.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+.background_content {
+    position: relative;
+    top: 0px;
+    height: 80vh;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    z-index: 98;
+    text-align: center;
+
+}
+.pricing_nav{
+  width: 45%;
+  margin:0 auto;
+  padding:7vh 0 3vh;
+  font-size:0.9rem;
+  font-weight: bold;
+
+}
+.pricing_nav button{
+  cursor: pointer;
+  border:none;
+  background:none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+}
+.pricing_nav button.active{
+  border-bottom:
+  1px solid #323232;
+}
+.pricing_nav button:hover{
+  color:rgb(129, 24, 24) !important;
+}
+.pricing_image{
+  justify-content: center;
+}
+/* ++++++FILTER+++++ */
+#portfolio{
+  padding-bottom:4vh;
+}
+.item{
+  margin:1.3vh;
+}
+.mix{
+  display: none;
+}
+.pricing_image img{
+  width: 207px;
+  object-fit: cover;
+  height:165.6px;
+  margin-bottom:-5px;
+}
+.pricing_image p{
+  font-weight: bold;
+  padding:1.6vh;
+  background-color: #eb0632;
+  color:#fff;
+  text-align: center;
+}
+.place{
+  background:url(../img/beer.jpg) no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 70vh;
+  text-align:center;
+  margin-bottom:10vh;
+}
+/* +++++++++++++BEER++++++++++ */
+/* Часть стилей в ABOUT */
+ #beer .images img{
+  width: 80%;
+  height:auto;
+}
+
+/* ++++++++++BREAKFAST_MENU+++++++++ */
+#breakfast_menu .background_content{
+  background-image: url(../img/breakfast.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom:10vh;
+}
+/* +++++++BREAD+++++++ */
+.icon-bread::before{
+  content: '\f103';
+}
+/* #bread .images img{
+ margin:1%;
+} */
+/* +++++++featuredu+++++++ */
+#featured .background_content{
+  background-image: url(../img/featured.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom:10vh;
+}
+/* ++++++++++++LOOK_DISHES+++++++++++ */
+#look_dishes h2{
+  text-transform: none;
+}
+#look_dishes .images{
+  width: 45%;
+  align-items: center;
+}
+#look_dishes .images img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin:0 auto;
+}
+.slick-dots{
+  bottom:80px;
+}
+/* ++++++++Reserve++++++++ */
+#reservation .background_content{
+  background-image: url(../img/reservation-seat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.reserve{
+  margin:13vh auto;
+}
+ .reserve form, .hours{
+  width: 45%;
+  max-width: 80%;
+  justify-content: space-between;
+  flex: 1 0 400px;
+  margin:0 2% 10vh 0;
+}
+.hours{
+  margin-bottom:0;
+}
+form{
+  transition: all 0.4s;
+  box-sizing: border-box;
+  outline: none;
+}
+h4{
+  font-size: 1rem;
+  text-transform:capitalize;
+  padding-bottom:3vh;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+.hours table{
+  font-size: .7rem;
+  width: 100%;
+}
+ table td{
+  padding:1.2vh 0;
+  border-bottom:1px solid #323232;
+}
+input, textarea{
+  border:1px solid rgba(13, 12, 12, 0.23);
+  outline: none;
+
+}
+::-webkit-input-placeholder{
+  font-size: 0.7rem;
+}
+::-moz-placeholder{
+  font-size: 0.7rem;
+}
+:-ms-input-placeholder{
+  font-size: 0.7rem;
+}
+input:hover, input:focus, textarea:hover, textarea:focus{
+  border:1px solid   rgba(80, 160, 108, 1);
+
+}
+
+.reserve input{
+  justify-content: space-between;
+  width: 47%;
+  padding:2vh;
+  margin:0 4% 4vh 0;
+  flex:1 0 210px;
+}
+form button{
+  width: 40%;
+  padding:1.8vh 3%;
+  background-color:rgba(80, 160, 108, 1);
+  border:0;
+  border-radius: 3px;
+  color:#fff;
+  font-size:.7rem;
+  outline: none;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: rgba(85, 184, 120, 1);
+}
+.reservation_contacts{
+  background-color:#000;
+  padding:8vh 0;
+  color:#fff;
+}
+.social, .phone{
+  flex:0 0 380px;
+  max-width: 80%;
+  margin-bottom:5vh;
+}
+.social{
+  flex:0 0 220px;
+}
+h5{
+  color:#63C85D;
+  font-size:1.4rem;
+  font-weight: bold;
+  margin-bottom:1.8vh;
+  text-align: center;
+  letter-spacing: 0.04rem;
+}
+.social li a{
+  font-size:1.4rem;
+  color:#fff;
+  /* letter-spacing: 1rem; */
+}
+.color_animation:hover {
+    color: #9BE86F !important;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+.icon-github:before {
+  content: "\e601";
+}
+.icon-linkedin:before {
+  content: "\e603";
+}
+.icon-mail:before {
+  content: "\e600";
+}
+.phone p{
+  text-align: center;
+}
+.phone a{
+  color:#fff;
+  letter-spacing: 0.09rem;
+}
+.phone a:hover{
+    color:#63C85D;
+}
+/* ++++++CONTACT+++++ */
+.message form{
+  margin:10vh 0 8vh 0;
+  align-items: stretch;
+  justify-content: space-between;
+
+}
+.form_input, .form_message{
+  width: 45%;
+  margin:0 2% 3vh 3%;
+  max-width: 100%;
+  justify-content: space-around;
+  flex:1 0 280px;
+}
+.form_button{
+  width: 45%;
+  /* flex:1 0 260px; */
+  margin:0 0 3vh 3%;
+  justify-content: space-around;
+}
+.form_input input{
+  width: 100%;
+  padding:2vh;
+  margin-bottom:3vh;
+}
+.form_input input:last-child{
+  margin-bottom:0;
+}
+textarea{
+  width: 100%;
+  height:100%;
+  padding:2vh;
+
+}
+/* +++++++++++FOOTER++++++ */
+footer{
+  padding-top:3vh;
+  background-color:#1c1c1c;
+  color:#6B6B6B;
+  font-size:0.7rem;
+}
+.copirate, .back, .marketing{
+  flex:1 0 240px;
+  padding-bottom:3vh;
+}
+footer p{
+  text-align: center;
+  line-height: 1.3;
+}
+footer a{
+  color:#BDBDBD;
+}
